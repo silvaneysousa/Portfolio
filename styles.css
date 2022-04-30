@@ -7,7 +7,6 @@
     text-decoration: none;
 }
 
-
 body {
     font-size: 100%;
 }
@@ -38,7 +37,6 @@ body {
 .item-menu-header:hover {
     color: #05299E;
     font-size: 22px;
-    
 }
 
 .item-menu-header:last-child {
@@ -53,19 +51,21 @@ body {
     color: #FFFBFC;
 }
 
-/*main {
-    margin-bottom: 48px;
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
-*/
+
 .conteudo-principal{
     /*height: 545px;*/
+    width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    /*padding: 175px 60px 0px 60px;*/
-    padding: 80px 60px 0px 60px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 24px 24px 0 24px;
     background: linear-gradient(to bottom, #FFFBFC 45.62%, #dad8d8 95.61%)
-    /*background: #FFFBFC;*/
 }
 
 .conteudo-principal-texto {
@@ -144,7 +144,7 @@ ul {
 }
 .lista-especialidade {
     width: 20%;
-    height: 200px;
+    height: 220px;
 }
 
 .lista-especialidade li {
@@ -210,4 +210,80 @@ footer section {
     display: flex;
     font-size: 20px;
     margin: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .nome{
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .lista-especialidade {
+        width: 25%;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nome {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .lista-especialidade {
+        width: 40%;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo-principal-texto{
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    .nome {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .lista-especialidade {
+        width: 60%;
+        height: 220px;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-text-footer {
+        text-align: center;
+    }
 }
