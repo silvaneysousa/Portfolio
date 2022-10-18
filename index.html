@@ -14,13 +14,13 @@
 </head>
 
 <body>
-    
+
     <header class="topo">
        <a href="#"> <img src="./src/logo_transparent.png" alt="Logotipo" class="logo-header"></a>
         <nav class="menu-header">
             <a href="#" class="item-menu-header">Início</a>
-            <a href="#" class="item-menu-header">Trabalhos</a>
-            <a href="#" class="item-menu-header">Me encontre</a>
+            <a href="#especialidades" class="item-menu-header">Trabalhos</a>
+            <a href="#social" class="item-menu-header">Me encontre</a>
         </nav>
     </header>
 
@@ -30,24 +30,26 @@
                 <h1>
                     Olá, tudo bem?! Meu nome é <p class="nome">Silvaney de Sousa</p> <p class="subtitulo"> Eu sou programador Front-end e por aqui você pode conhecer alguns de meus trabalhos. </p>
                 </h1>
-                <button class="botao-trabalhos">Meus trabalhos</button>
+                <!-- <button class="botao-trabalhos">Meus trabalhos</button> -->
+                <a href="#social" class="botao-trabalhos">Meus trabalhos</a>
+
             </div>
             <div class="image">
                 <img src="./src/DSC_05611-removebg-preview.png" alt="Foto do Silvaney" class="image-silvaney">
             </div>
         </section>
 
-        <section class="conteudo-secundario">
+        <section class="conteudo-secundario" id="especialidades">
             <h2>Especialista em</h2>
             <div class="itens-especilista">
                 <ul>
-                    <a href="https://silvaneysousa.github.io/Landing_Page_The_Robot/" class="lista-especialidade" target="__blank">
+                    <a href="https://silvaneysousa.github.io/TO-DO-LIST/" class="lista-especialidade" target="__blank">
                         <li>
                             <p class="icone-lista">
                                 <i class="fa-solid fa-display"></i>
                             </p> 
                             <h3 class="titulo-lista">Web Design</h3>
-                            <p class="paragrafo-lista">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                            <p class="paragrafo-lista">Dois projetos realizados para demonstrar o conhecimento que possuo em HTML, CSS e JavaScript.</p>
                         </li>
                     </a>
                     <a href="#" class="lista-especialidade">
@@ -56,7 +58,7 @@
                                 <i class="fa-solid fa-mobile-screen"></i>
                             </p>
                             <h3 class="titulo-lista">Mobile App Design</h3>
-                            <p class="paragrafo-lista">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                            <p class="paragrafo-lista">Estou aprimorando o meus conhecimentos em React Native. Assim que realizar projetos Mobile, acrescentarei nesta seção.</p>
                         </li>
                     </a>
                 </ul>
@@ -70,7 +72,7 @@
             <p>Donwload CV</p>
         </section>
 
-        <section class="social">
+        <section class="social" id="social">
             <div class="text-footer">Desenvolvido por Silvaney de Sousa</div>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/silvaney-sousa-12986210b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -78,6 +80,6 @@
             </div>
         </section>
     </footer>
-
+    <script src="./script.js"></script>
 </body>
 </html>
